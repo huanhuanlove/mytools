@@ -1,11 +1,13 @@
 package com.kang.mytools.imageNameFactory;
 
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Random;
 
+/**
+ * 处理大量的图片或视频上传时有同名的问题
+ */
 public class ImageName {
     static Logger log = LoggerFactory.getLogger(ImageName.class);
 
@@ -24,6 +26,7 @@ log.debug("拼串后图片名为--{}", str);
     return str;
     }
 
+    //测试
     public static void main(String[] args){
         ImageName.genImageName();
     }
