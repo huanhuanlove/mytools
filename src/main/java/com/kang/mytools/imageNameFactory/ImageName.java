@@ -11,8 +11,7 @@ import java.util.Random;
 public class ImageName {
     static Logger log = LoggerFactory.getLogger(ImageName.class);
 
-    public static String genImageName() {
-        String imgName = "aaa.png";
+    public static String genImageName(String imgName) {
         //取当前时间的长整形值包含毫秒
         long millis = System.currentTimeMillis();
         //long millis = System.nanoTime();
@@ -28,6 +27,6 @@ log.debug("拼串后图片名为--{}", str);
 
     //测试
     public static void main(String[] args){
-        ImageName.genImageName();
+        ImageName.genImageName("aaa.png");
     }
 }
